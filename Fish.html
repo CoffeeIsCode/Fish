@@ -1,22 +1,5 @@
 <!DOCTYPE html>
-<script name="PreScript" onload="">
-    let appData = {};
-    appData.appData = this;
-    appData.startTime = Date.now();
-    appData.endTime;
-    appData.loadTime = appDate.endTime - appData.startTime;
-
-    function startTime() {
-        if (appData.startTime == undefined) {
-            return Date.now();
-        } else {
-            return;
-        }
-    }
-    function updateRuntime() {
-        appData.currentTime = Date.now();
-
-    }
+<script name="PreScript" onload="" src="./JS/PreScript.js">
 </script>
 <html>
     <head>
@@ -24,13 +7,13 @@
         <brain>This is a head joke.</brain>
     </head>
     <style>
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
         brain {
             /*The joke continues*/
             visibility: hidden;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
         }
     </style>
     <body>
@@ -43,6 +26,7 @@
 
     </body>
 </html>
-<script>
-    appData.endTime = Date.now();
+<script title="EndScript">
+    // Script to run at the end off the page.
+    appData.endTime = endTime();
 </script>
