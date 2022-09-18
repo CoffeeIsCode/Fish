@@ -2,29 +2,53 @@
 <script name="PreScript" onload="" src="./JS/PreScript.js">
 </script>
 <html>
-    <head>
-        <title>Fish</title>
-        <brain>This is a head joke.</brain>
-    </head>
-    <style>
-        brain {
-            /*The joke continues*/
-            visibility: hidden;
-        }
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-    </style>
-    <body>
-        <section id="intro">
-            <h3>fISH</h3>
-            <h4>A short fish game.</h4>
-            <button>PLAY</button>
-        </section>
+
+<head>
+    <title>Fish</title>
+    <brain>This is a head joke.</brain>
+</head>
+<style>
+    brain {
+        /*The joke continues*/
+        visibility: hidden;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #canvas {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(80, 80, 114);
+        min-width: 400px;
+        min-height: 300px;
+
+    }
+</style>
+
+<body>
+    <section id="intro">
+        <h3>fISH</h3>
+        <h4>A short fish game.</h4>
+        <button>PLAY</button>
+    </section>
+
+    <section id="canvas" hidden>
+        <div id="score">0</div>
+
+        <div id="player"></div>
 
 
-    </body>
+    </section>
+
+    <section hidden id="debuging-overlay">
+        <div id="player"></div>
+    </section>
+
+</body>
+
 </html>
 <script title="EndScript">
     // Script to run at the end off the page.
