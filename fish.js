@@ -18,6 +18,6 @@ function buildWorld() {
 
 function playButton() {
     // Remove the title
-    elm.title.style.visibility = "hidden";
-    elm.subtitle.style.visibility = "hidden";
+    elm.title.style.visibility = "none";
+    elm.subtitle.style.visibility = "none";
 }
