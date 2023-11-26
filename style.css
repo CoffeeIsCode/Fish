@@ -6,7 +6,11 @@ brain {
     /*The joke continues*/
     visibility: hidden;
 }
-
+#play {
+    width: 180px;
+    height: 50;
+    background-color: antiquewhite;
+}
 body {
     margin: 0px;
     padding: 0px;
