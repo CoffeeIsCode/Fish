@@ -6,47 +6,29 @@
 <head>
     <title>Fish</title>
     <brain>This is a head joke.</brain>
+    <link rel="style" href="./style.css">
 </head>
 <style>
-    brain {
-        /*The joke continues*/
-        visibility: hidden;
+    #intro {
+        text-align: center;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    #canvas {
-        height: 100%;
-        width: 100%;
-        background-color: rgb(80, 80, 114);
-        min-width: 400px;
-        min-height: 300px;
-
-    }
 </style>
 
 <body>
     <section id="intro">
-        <h3>fISH</h3>
-        <h4>A short fish game.</h4>
-        <button>PLAY</button>
+        <h3 id="title">FISH</h3>
+        <h4 id="subtitle">A short fish game.</h4>
+        <button id="play" onclick="playButton()">PLAY</button>
     </section>
 
     <section id="canvas" hidden>
         <div id="score">0</div>
-
-        <div id="player"></div>
-
-
-    </section>
-
-    <section hidden id="debuging-overlay">
         <div id="player"></div>
     </section>
-
 </body>
 
 </html>

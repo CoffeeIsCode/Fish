@@ -1,6 +1,5 @@
 /**/
 let appData = {};
-    appData.appData = this;
     appData.startTime = startTime();
     appData.endTime;
     appData.loadTime = appDate.endTime - appData.startTime;
