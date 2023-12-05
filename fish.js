@@ -2,22 +2,24 @@
 fish.js
 */
 
-var elm = {
-    player:document.getElementById('player'),
-    score:document.getElementById('score'),
-    play:document.getElementById('playButton'),
-    title:document.getElementById('title'),
-    subtitle:document.getElementById('subtitle')
-    canvas:document.getElementById('canvas')
+var elm = {};
+elm.player = document.getElementById("player");
+elm.score = document.getElementById("score");
+elm.play = document.getElementById("play");
+elm.title = document.getElementById("title");
+elm.subtitle = document.getElementById("subtitle");
+elm.canvas = document.getElementById("canvas");
 
-}   
-
-function buildWorld() {
-
-}
+function buildWorld() {}
 
 function playButton() {
-    // Remove the title
-    elm.title.style.visibility = "none";
-    elm.subtitle.style.visibility = "none";
+  // Remove the title
+  elm.title.style.visibility = "hidden";
+  elm.subtitle.style.visibility = "hidden";
+  elm.canvas.style.visibility = "visible";
+  elm.play.style.visibility = "hidden";
+  elm.canvas.style.visibility = "wisible";
+  elm.player.style.visibility = "visible";
 }
+
+function fishRight() {}
