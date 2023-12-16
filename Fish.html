@@ -1,11 +1,13 @@
+<!-- 
+    FISH - A simple game built exclusively in HTML, CSS and JS.
+-->
 <!DOCTYPE html>
-<script name="PreScript" onload="" src="./JS/PreScript.js">
-</script>
+<script name="PreScript" onload="" src="./JS/PreScript.js"> /* Note: PreScript.JS script tag is to be placed at the beginning of the page before the pages opening html tag. */ </script>
 <html>
 
 <head>
     <title>Fish</title>
-    <brain hidden>This is a head joke.</brain>
+    <brain hidden>This is a (fish) head joke.</brain>
     <link rel="style" href="./style.css">
 </head>
 
@@ -15,21 +17,43 @@
 </style>
 
 <body>
+    <!-- 
+        Introduction Screen
+            
+    -->
     <div id="intro">
         <h3 id="title">FISH</h3>
         <h4 id="subtitle">A short fish game.</h4>
         <button id="play" onclick="playButton()">PLAY</button>
     </div>
 
+    <!-- 
+        Game Objects
+    -->
     <div id="canvas">
         <div id="score">0</div>
         <div id="player"></div>
     </div>
 </body>
 
+<script title="fish.js" src="./fish.js"></script>
+
 </html>
 <script title="EndScript">
     // Script to run at the end off the page.
     appData.endTime = endTime();
 </script>
-<script title="fish" src="./fish.js"></script>
+
+<!-- 
+    I wanted to put this comment at
+    the bottom of this page as a 
+    thank you for reading, modifying, 
+    contributing or simply downloading
+    this project which I have had a lot
+    fun making.
+    
+    THANK YOU,
+    CoffeeIsCode
+-->
+
+<!-- Copyright (C) 2023 CoffeeIsCode -->
